@@ -8,6 +8,7 @@ onErrorCaptured((err, instance, info) => {
   console.error('erreur : ', err, '\ninfo : ', info, '\ncomposant : ', instance)
   return true
 })
+
 </script>
 
 <template>
@@ -26,7 +27,8 @@ onErrorCaptured((err, instance, info) => {
     leave-active-class="-translate-x-full">
   <nav v-show="menuIsOpen" id="mainNav">
     <ul>
-      <li><a href="#">item 1</a></li>
+      <li><RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink></li>
+      <li><RouterLink to="/accordeon" class="text-red-500 underline"> Accordeon </RouterLink></li>
       <li><a href="#">item 2</a></li>
       <li><a href="#">item 3</a></li>
     </ul>
@@ -36,7 +38,6 @@ onErrorCaptured((err, instance, info) => {
     <nav>
       <ul>
         <li>
-          <RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink>
         </li>
       </ul>
     </nav>
