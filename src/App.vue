@@ -16,7 +16,7 @@ onErrorCaptured((err, instance, info) => {
     @pointerdown="menuIsOpen = !menuIsOpen"
     aria-controls="mainNav"
     aria-expanded="true"
-    class="rounded-full border-2 border-red-600 bg-red-300 px-2"
+    class="rounded-full border-2 border-indigo-600 bg-indigo-300 px-2"
   >
     menu
   </button>
@@ -30,8 +30,7 @@ onErrorCaptured((err, instance, info) => {
       <li><RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink></li>
       <li><RouterLink to="/accordeon" class="text-red-500 underline"> Accordeon </RouterLink></li>
       <li><RouterLink to="/boucleSurDonnees" class="text-red-500 underline"> Boucle </RouterLink></li>
-      <li><a href="#">item 2</a></li>
-      <li><a href="#">item 3</a></li>
+      <li><RouterLink to="/aspectMenu" class="text-red-500 underline">Aspect Menu </RouterLink></li>
     </ul>
   </nav>
   </transition>
