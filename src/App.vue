@@ -12,7 +12,7 @@ onErrorCaptured((err, instance, info) => {
 
 <template>
   <button
-    @click="menuIsOpen = !menuIsOpen"
+    @pointerdown="menuIsOpen = !menuIsOpen"
     aria-controls="mainNav"
     aria-expanded="true"
     class="rounded-full border-2 border-red-600 bg-red-300 px-2"
